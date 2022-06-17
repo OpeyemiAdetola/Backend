@@ -7,10 +7,10 @@ const cors = require('cors');
 
 app.use(cors());
 
-const Food = require('./models/food');
-const Beverage = require('./models/beverage');
-const Offer = require('./models/offer');
-const Foodtype = require('./Models/foodtype');
+const Food = require('./Models/food');
+const Beverage = require('./Models/beverage');
+const Offer = require('./Models/offer');
+
 
 
 
@@ -95,7 +95,7 @@ function custom_middleware(req, res, next) {
 
 
 
-app.listen(4000, function () {
-    console.log('Server running on port 4000...');
+app.listen(5000, function () {
+    console.log('Server running on port 5000...');
 }); // to create a web server
 

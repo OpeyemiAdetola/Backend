@@ -1,8 +1,9 @@
-const Sequelize = require ('sequelize');
-const config = require('../config');
+const Sequelize = require('sequelize');
 const { formatBeverage } = require('../myModule');
+const config = require('./../config');
 
-const Beverage= config.define('beverage',{
+
+const Beverage= config.define('Beverage',{
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,

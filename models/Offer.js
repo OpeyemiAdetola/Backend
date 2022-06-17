@@ -1,6 +1,7 @@
 const Sequelize = require ('sequelize');
 const config = require('../config');
 const { formatOffer } = require('../myModule');
+
 const Offer= config.define('Offer',{
     id: {
         type: Sequelize.INTEGER,

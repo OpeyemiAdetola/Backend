@@ -12,8 +12,6 @@ exports.formatOffer = function (offer) {
 
 };
 
-exports.formatFoodtype = function(foodtype){
-    return `Your type offood  is ${""} `
-};
+
 
 exports.appName = "ABC-Resturant";  
