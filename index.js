@@ -7,9 +7,9 @@ const cors = require('cors');
 
 app.use(cors());
 
-const Food = require('./Models/food');
-const Beverage = require('./Models/beverage');
-const Offer = require('./Models/offer');
+const Food = require('./models/food');
+const Beverage = require('./models/beverage');
+const Offer = require('./models/offer');
 const Foodtype = require('./Models/foodtype');
 
 

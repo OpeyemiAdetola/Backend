@@ -1,5 +1,6 @@
 const Sequelize = require ('sequelize');
-const config = require('./../config');
+const config = require('../config');
+const { formatFood } = require('../myModule');
 const Food= config.define('Food',{
     id: {
         type: Sequelize.INTEGER,
@@ -25,4 +26,4 @@ const Food= config.define('Food',{
     }
 }, { timestamps: false });
  
-module.exports = Food;
+module.exports = formatFood;

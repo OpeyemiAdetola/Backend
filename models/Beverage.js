@@ -1,6 +1,8 @@
 const Sequelize = require ('sequelize');
-const config = require('./../config');
-const Beverage= config.define('Beverage',{
+const config = require('../config');
+const { formatBeverage } = require('../myModule');
+
+const Beverage= config.define('beverage',{
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -25,4 +27,4 @@ const Beverage= config.define('Beverage',{
     }
 }, { timestamps: false });
  
-module.exports = Beverage;
+module.exports = formatBeverage;
