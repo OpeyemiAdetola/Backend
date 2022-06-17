@@ -19,6 +19,7 @@ config.authenticate().then(function () {
 
 
 app.get('/', function(req, res){
+    var i = 0;
     Food.create(req.body).then(function (result) {
         console.log(req.body)});
 });
