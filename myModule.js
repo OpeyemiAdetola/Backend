@@ -14,4 +14,4 @@ exports.formatOffer = function (offer) {
 
 
 
-exports.appName = "ABC-Resturant";  
+exports.appName = "w47ya69v92bjuqie";  

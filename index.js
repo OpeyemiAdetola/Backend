@@ -5,6 +5,7 @@ const myModule = require('./myModule');
 const sequelize = require('./config');
 const cors = require('cors');
 
+
 app.use(cors());
 
 const Food = require('./Models/food');
@@ -18,15 +19,13 @@ app.use(express.urlencoded({ extended: false }));// for res.body to work
 app.use(express.json()); // required if data from client is sent in a JSON format
 
 //create a DB connection
+
 let conn = mysql.createConnection({
     host: 'qao3ibsa7hhgecbv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     user: 'jjg2a9gl405m55zf5',
     password: 'tw6nal2atinb30jp',
     database: 'w47ya69v92bjuqie'
 });
-
-
-
 
 
 
@@ -95,7 +94,7 @@ function custom_middleware(req, res, next) {
 
 
 
-app.listen(5000, function () {
-    console.log('Server running on port 5000...');
+app.listen(4000, function () {
+    console.log('Server running on port 4000...');
 }); // to create a web server
 
